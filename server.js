@@ -11,7 +11,7 @@ app.use(
     extended: false
   })
 );
-app.use(express.static("uploads"));
+app.use(express.static("public"));
 
 app.get("/serverstatus", function(req, res) {
   console.log("Server is running");
