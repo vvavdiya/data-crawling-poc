@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Data Crawling</title>
+    <style></style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <div class="block">
+      <h3>Data Crawling App</h3>
+      <p>
+        Remote script - collects and sends data to given remote server/database
+      </p>
+      <p>
+        Remote script embedded in webpage which will load and execute remote
+        script.
+      </p>
+    </div>
+
+    <script>
+      //var url = "https://code.jquery.com/color/jquery.color.js";
+      var url = "http://localhost:8080/remotescript.js";
+      $.getScript(url, function() {
+        alert("Remote script loaded and executed successfully.");
+      });
+    </script>
+  </body>
+</html>
